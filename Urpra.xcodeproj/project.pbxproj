@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E4DEA27CEBBAE208B3B998A /* Pods_Urpra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB48C5E26069967E9148BF3B /* Pods_Urpra.framework */; };
 		F9CCB6891DD3E5AE002A7425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCB6881DD3E5AE002A7425 /* AppDelegate.swift */; };
 		F9CCB68B1DD3E5AE002A7425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCB68A1DD3E5AE002A7425 /* ViewController.swift */; };
 		F9CCB68E1DD3E5AE002A7425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CCB68C1DD3E5AE002A7425 /* Main.storyboard */; };
 		F9CCB6901DD3E5AE002A7425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9CCB68F1DD3E5AE002A7425 /* Assets.xcassets */; };
 		F9CCB6931DD3E5AE002A7425 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CCB6911DD3E5AE002A7425 /* LaunchScreen.storyboard */; };
+		F9CCB69B1DD3E65C002A7425 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9CCB69A1DD3E65C002A7425 /* GoogleService-Info.plist */; };
+		F9CCB69D1DD3E77A002A7425 /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CCB69C1DD3E77A002A7425 /* Values.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62B2653F1FFA306D2225F500 /* Pods-Urpra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urpra.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urpra/Pods-Urpra.debug.xcconfig"; sourceTree = "<group>"; };
+		BB48C5E26069967E9148BF3B /* Pods_Urpra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Urpra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F764BD7F162F102254A33CD3 /* Pods-Urpra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urpra.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urpra/Pods-Urpra.release.xcconfig"; sourceTree = "<group>"; };
 		F9CCB6851DD3E5AE002A7425 /* Urpra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Urpra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CCB6881DD3E5AE002A7425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9CCB68A1DD3E5AE002A7425 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,9 @@
 		F9CCB68F1DD3E5AE002A7425 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9CCB6921DD3E5AE002A7425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9CCB6941DD3E5AE002A7425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9CCB69A1DD3E65C002A7425 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F9CCB69C1DD3E77A002A7425 /* Values.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Values.swift; sourceTree = "<group>"; };
+		F9CCB69E1DD3EA4B002A7425 /* Urpra.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Urpra.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4DEA27CEBBAE208B3B998A /* Pods_Urpra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		027C495F8304B8A4D993C80A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB48C5E26069967E9148BF3B /* Pods_Urpra.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		641B72A2CD70DE2603C962DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62B2653F1FFA306D2225F500 /* Pods-Urpra.debug.xcconfig */,
+				F764BD7F162F102254A33CD3 /* Pods-Urpra.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F9CCB67C1DD3E5AE002A7425 = {
 			isa = PBXGroup;
 			children = (
 				F9CCB6871DD3E5AE002A7425 /* Urpra */,
 				F9CCB6861DD3E5AE002A7425 /* Products */,
+				641B72A2CD70DE2603C962DA /* Pods */,
+				027C495F8304B8A4D993C80A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,11 +83,14 @@
 		F9CCB6871DD3E5AE002A7425 /* Urpra */ = {
 			isa = PBXGroup;
 			children = (
+				F9CCB69E1DD3EA4B002A7425 /* Urpra.entitlements */,
 				F9CCB6881DD3E5AE002A7425 /* AppDelegate.swift */,
+				F9CCB69C1DD3E77A002A7425 /* Values.swift */,
 				F9CCB68A1DD3E5AE002A7425 /* ViewController.swift */,
 				F9CCB68C1DD3E5AE002A7425 /* Main.storyboard */,
 				F9CCB68F1DD3E5AE002A7425 /* Assets.xcassets */,
 				F9CCB6911DD3E5AE002A7425 /* LaunchScreen.storyboard */,
+				F9CCB69A1DD3E65C002A7425 /* GoogleService-Info.plist */,
 				F9CCB6941DD3E5AE002A7425 /* Info.plist */,
 			);
 			path = Urpra;
@@ -71,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9CCB6971DD3E5AE002A7425 /* Build configuration list for PBXNativeTarget "Urpra" */;
 			buildPhases = (
+				56901F8F53B73DD64F1422A5 /* 📦 Check Pods Manifest.lock */,
 				F9CCB6811DD3E5AE002A7425 /* Sources */,
 				F9CCB6821DD3E5AE002A7425 /* Frameworks */,
 				F9CCB6831DD3E5AE002A7425 /* Resources */,
+				63291A3758912577627220C3 /* 📦 Embed Pods Frameworks */,
+				92208BE83E7D1357465E2CE9 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,8 +131,12 @@
 				TargetAttributes = {
 					F9CCB6841DD3E5AE002A7425 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = QN8H28W4G3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9CCB6931DD3E5AE002A7425 /* LaunchScreen.storyboard in Resources */,
+				F9CCB69B1DD3E65C002A7425 /* GoogleService-Info.plist in Resources */,
 				F9CCB6901DD3E5AE002A7425 /* Assets.xcassets in Resources */,
 				F9CCB68E1DD3E5AE002A7425 /* Main.storyboard in Resources */,
 			);
@@ -132,12 +172,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56901F8F53B73DD64F1422A5 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		63291A3758912577627220C3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Urpra/Pods-Urpra-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92208BE83E7D1357465E2CE9 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Urpra/Pods-Urpra-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F9CCB6811DD3E5AE002A7425 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F9CCB68B1DD3E5AE002A7425 /* ViewController.swift in Sources */,
+				F9CCB69D1DD3E77A002A7425 /* Values.swift in Sources */,
 				F9CCB6891DD3E5AE002A7425 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,9 +346,11 @@
 		};
 		F9CCB6981DD3E5AE002A7425 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62B2653F1FFA306D2225F500 /* Pods-Urpra.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QN8H28W4G3;
+				CODE_SIGN_ENTITLEMENTS = Urpra/Urpra.entitlements;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Urpra/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ashok.Urpra;
@@ -270,9 +361,11 @@
 		};
 		F9CCB6991DD3E5AE002A7425 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F764BD7F162F102254A33CD3 /* Pods-Urpra.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QN8H28W4G3;
+				CODE_SIGN_ENTITLEMENTS = Urpra/Urpra.entitlements;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Urpra/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ashok.Urpra;
@@ -300,6 +393,7 @@
 				F9CCB6991DD3E5AE002A7425 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
