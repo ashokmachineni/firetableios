@@ -11,6 +11,7 @@ import UIKit
 import Firebase
 
 
+
 class ViewController: UITableViewController {
     
     var ref: FIRDatabaseReference!
@@ -34,10 +35,10 @@ class ViewController: UITableViewController {
                 if let dictionary = snapshot.value as? [String : AnyObject] {
                     print(dictionary)
                     
-                    let value = Values()
+                    let value = Values() as AnyObject
                     
                     value.setValuesForKeys(dictionary)
-                    self.valueList.append(value)
+                    self.valueList.append(value as! Values)
                     
                     
                     self.tableView.reloadData()
@@ -50,9 +51,6 @@ class ViewController: UITableViewController {
         
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return valueList.count
@@ -60,11 +58,17 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FTableViewCell
+        
+        
         
         let value = valueList[indexPath.row]
         
-        cell.textLabel?.text = value.title
+        cell.fTitle.text = value.title
+        let imageUrlString = valueList[indexPath.row] as! String
+        let imageURL = NSURL(string: imageUrlString)
+        let imageData = NSData(contentsOf: imageURL as! URL)
+        cell.fImage.image = UIImage(data: imageData as! Data)
         
         return cell
         

@@ -9,5 +9,6 @@
 import Foundation
 class Values: NSObject {
     var title: String?
+    var image: String?
 }
 

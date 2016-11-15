@@ -13,27 +13,44 @@
         <scene sceneID="9py-8d-Gzj">
             <objects>
                 <tableViewController id="34h-4M-aFG" customClass="ViewController" customModule="Urpra" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7xz-f6-m0E">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="89" sectionHeaderHeight="28" sectionFooterHeight="28" id="7xz-f6-m0E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="Ywy-Qj-qaS" style="IBUITableViewCellStyleDefault" id="USH-Wx-L6o">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="89" id="USH-Wx-L6o" customClass="FTableViewCell" customModule="Urpra" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="89"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="USH-Wx-L6o" id="Fbp-sk-xia">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="88.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ywy-Qj-qaS">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pRh-eZ-Dm0">
+                                            <rect key="frame" x="22" y="5" width="98" height="68"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="68" id="HAe-QU-g04"/>
+                                                <constraint firstAttribute="width" constant="98" id="TVu-Hy-nJL"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Iu-Lk-GP7">
+                                            <rect key="frame" x="164" y="25" width="113" height="39"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" red="0.0753302201628685" green="0.0029881014488637447" blue="0.99755197763442993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="pRh-eZ-Dm0" firstAttribute="top" secondItem="Fbp-sk-xia" secondAttribute="top" constant="5" id="4Bp-qQ-Xda"/>
+                                        <constraint firstItem="pRh-eZ-Dm0" firstAttribute="leading" secondItem="Fbp-sk-xia" secondAttribute="leading" constant="22" id="8Tg-SA-Mja"/>
+                                        <constraint firstAttribute="trailing" secondItem="pRh-eZ-Dm0" secondAttribute="trailing" constant="255" id="iEn-Ay-6Pj"/>
+                                        <constraint firstAttribute="bottom" secondItem="pRh-eZ-Dm0" secondAttribute="bottom" constant="15.5" id="mcE-KW-yGk"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="fImage" destination="pRh-eZ-Dm0" id="u2m-hQ-BAf"/>
+                                    <outlet property="fTitle" destination="7Iu-Lk-GP7" id="j6N-y4-aNM"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -44,7 +61,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PC0-u9-SBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="197" y="-45"/>
+            <point key="canvasLocation" x="196" y="-45.42728635682159"/>
         </scene>
     </scenes>
 </document>
